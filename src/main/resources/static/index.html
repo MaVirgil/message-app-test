@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Simple HTML + CSS site</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <h1 id="siteTitle">HTML + CSS TEST SIDE</h1>
+            <p>Denne side udgør mit første egentlige Spring Boot webprojekt, hvilket medfører at
+            en stor del af den bagomliggende kode ikke har noget funktionelt grundlag, men blot
+            eksisterer som øvelse af grundlæggende koncepter inden for Spring Boot</p>
+            <p>Tjek sidens kode ud på <a href="https://google.com" target="_blank">Github</a>!</p>
+        </div>
+    </header>
+    <div class="center">
+        <article>
+            <h2>Sidens opbygning</h2>
+            <p>Denne side består af et simpelt HTML-dokument, som linker til et css stylesheet.
+            HTML-dokumentet består af simple elementer med semantiske tags, såsom header (&lt;h1&gt;)
+            og paragraph (&lt;p&gt;). Denne tekst befinder sig i HTML-dokumentets &lt;body&gt;,
+            som generelt indeholder størstedelen af sidens indhold.</p>
+            <p>Her ses HTML-koden for en simpel body:</p>
+            <img src="HtmlExample.png"
+                 alt="Some of this site's HTML code"
+                 class="article-screenshot">
+        </article>
+        <article>
+            <h2>Endpoints</h2>
+            <p>Denne side har en række endpoints som kan bruges til at se et eksempel på eksponering
+            af data gennem http requests, hvilket både kan bruges til at udvikle dynamiske web-applikationer
+            og APIs. På <a href="/messages" target="_blank">denne URL</a> kan du tilgå bagomliggende dummy data i form
+            af en række beskeder der bliver sendt tilbage til browseren i JSON format gennem en HTTP-respons</p>
+            <img src="ControllerExample.png"
+                 alt="An example of mapping a request-URL onto a method in a controller class"
+                 class="article-screenshot">
+        </article>
+    </div>
+</body>
+</html>

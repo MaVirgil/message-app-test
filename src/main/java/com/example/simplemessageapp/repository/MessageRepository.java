@@ -17,9 +17,9 @@ public class MessageRepository {
     }
 
     private void populateMessages() {
-        int initialNumMessages = 5;
+        int initialNumMessages = 3;
         while (latestId <= initialNumMessages - 1) {
-            messages.add(new Message(getNextId(), "Dette er den " + latestId + ". besked!"));
+            messages.add(new Message(getNextId(), "Dette er den " + latestId + ". besked"));
         }
     }
 
